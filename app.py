@@ -61,10 +61,10 @@ def analyze():
 
     candidate_models = [
         os.environ.get("GEMINI_MODEL"),
+        "gemini-3.1-flash-lite",
         "gemini-3.8-flash",
+        "gemini-3.5-flash",
         "gemini-2.5-flash",
-        "gemini-2.0-flash",
-        "gemini-1.5-flash",
     ]
     # Unique non-empty models
     models_to_try = [m for i, m in enumerate(candidate_models) if m and m not in candidate_models[:i]]
