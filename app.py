@@ -61,6 +61,7 @@ def analyze():
 
     candidate_models = [
         os.environ.get("GEMINI_MODEL"),
+        "gemini-3.8-flash",
         "gemini-2.5-flash",
         "gemini-2.0-flash",
         "gemini-1.5-flash",
